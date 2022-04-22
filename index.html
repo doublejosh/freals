@@ -64,13 +64,21 @@
         color: #fff;
       }
       .description p {
-        width: 75%;
-        margin: 0 auto;
         text-align: center;
         font-size: 1rem;
         /* color: rgba(0, 0, 0, 0.5); */
       }
+      .desktop-only {
+        display: inline-block;
+      }
       @media (min-width: 768px) {
+        .description p {
+          width: 75%;
+          margin: 0 auto 0.5rem auto;
+        }
+        .desktop-only {
+          display: none;
+        }
         .main h2 {
           margin-top: 2rem;
         }
@@ -143,9 +151,12 @@
       <div class="description">
         <h2>Join us September 17th on Camano.</h2>
         <p>
-          Website and details forthcoming. Ceremony @ 5pm on Saturday.<br />
-          Please come hangout Friday - Sunday if you can.<br />
-          Lots of camping close by will be available (with showers).
+          Website and details forthcoming. <br class="desktop-only" />Ceremony @
+          5pm on Saturday.
+        </p>
+        <p>
+          Please come hangout Friday - Sunday if you can. Lots of camping close
+          by will be available (with showers).
         </p>
       </div>
     </div>
